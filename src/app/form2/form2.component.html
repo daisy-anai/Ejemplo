@@ -1,0 +1,20 @@
+<p>form2 works!</p>
+<div class="card">
+    <div class="card-body">
+        <form [formGroup]="formUser" (ngSubmit)="enviar()">
+            <div>
+                <label>Nombre</label>
+                <input  type="text" formControlName="nombre" placeholder="Ingresa nombre">
+            </div>
+            <div class="mb-2">
+                <label>Apellido paterno</label>
+                <input  type="text" formControlName="ap_p" placeholder="Ingresa Apellido paterno">
+            </div>
+            <div class="mb-2">
+                <label>Apellido Materno</label>
+                <input  type="text" formControlName="ap_m" placeholder="Ingresa Apellido Materno">
+            </div>
+            <button class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+</div>

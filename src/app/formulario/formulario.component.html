@@ -1,0 +1,16 @@
+<p>formulario dos</p>
+<div class="card">
+    <div class="card-body">
+        <form [formGroup]="formUser" (ngSubmit)="enviar()" class="form-label">
+            <div class="mb-2">
+                <label>Nombre: </label>
+                <input type="text" formControlName="nombre" placeholder=" Ingresa tu Nombre">
+            </div>
+            <div class="mb-2">
+                <label>Edad: </label>
+                <input type="number"formControlName="edad"  placeholder=" Ingresa tu edad">
+            </div>
+            <button class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+</div>
